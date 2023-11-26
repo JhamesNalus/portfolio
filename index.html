@@ -140,7 +140,7 @@
           <h1 class="section-title"><span>About</span> me</h1>
           <h2>a 26-year-old IT enthusiast currently diving deep into the tech world over at Guagua National Colleges. You see, I've got my sights set on dominating the field of IT, especially in the realm of networking. Networking is my jam. I love unraveling the mysteries of network architecture, getting down and dirty with protocols, and ensuring everything is locked down tight in terms of security. I'm not just about learning the basics – I'm here to master the whole networking game.</h2>
           <!-- <p></p> -->
-          <a href="#" class="cta">Download Resume</a>
+          <a href="jhames_russell_nalus_resume.pdf" class="cta">Download Resume</a>
         </div>
       </div>
     </section>
@@ -154,14 +154,14 @@
         </div>
         <div class="contact-items">
           <div class="contact-item">
-            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+            <div class="icon"><img src="phone.png" /></div>
             <div class="contact-info">
               <h1>Phone</h1>
               <h2>+63 977 741 3302</h2>
             </div>
           </div>
           <div class="contact-item">
-            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+            <div class="icon"><img src="new-post.png" /></div>
             <div class="contact-info">
               <h1>Email</h1>
               <h2>nalusjhamesrussell@gmail.com</h2>
@@ -169,7 +169,7 @@
             </div>
           </div>
           <div class="contact-item">
-            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+            <div class="icon"><img src="map-marker.png" /></div>
             <div class="contact-info">
               <h1>Address</h1>
               <h2>Bancal, Guagua, Pampanga</h2>
@@ -222,6 +222,20 @@
           mobile_menu.classList.toggle('active');
         });
       });
+
+      function downloadResume() {
+            // Replace 'YOUR_LINK_HERE' with the actual link to your resume file.
+            const resumeLink = 'jhamesrm.pdf';
+            
+            // Create an invisible link element and trigger the click event.
+            const link = document.createElement('a');
+            link.href = resumeLink;
+            link.download = 'jhamesrm.pdf'; // Set the desired file name.
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
     </script>
   </body>
 </html>
